@@ -1,0 +1,18 @@
+<input type="file" file-model="myFile"/><br><br>
+<strong style="font-size: 20px;">
+Options Available:
+</strong>
+<select style="font-size: 20px;" ng-model="OptionSelected" ng-options="item.OptionName for item in Options"></select>
+<p/>
+<strong style="font-size: 20px;">
+  Selected Option: {{OptionSelected.OptionName}} <br/>
+</strong>
+<hr/>
+<strong style="font-size: 20px;">
+Email:<input type="email" name="myAddress" ng-model="email">
+</strong>
+<span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+<hr/>
+<button ng-click="uploadFile()">Upload</button>
+<i ng-class="CheckSuccess()"></i>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+<!-- <i class="fa fa-thumbs-o-up fa-5x"></i> -->
